@@ -18,18 +18,12 @@ struct Colors {
 func fizzBuzz1(_ checkNum: Int) -> String {
     var answer = ""
 
-    if (checkNum % 3 == 0) { 
-        answer.append(Colors.yellow + "Fizz") }
-
-    if (checkNum % 5 == 0) {
-        answer.append(Colors.cyan + "Buzz") }
-        
-    if answer.isEmpty { 
-        answer = Colors.reset + "(\(checkNum.description))" }
+    if (checkNum % 3 == 0) { answer.append(Colors.yellow + "Fizz") }
+    if (checkNum % 5 == 0) { answer.append(Colors.cyan + "Buzz") }
+    if answer.isEmpty { answer = Colors.reset + "(\(checkNum.description))" }
     
     return answer
 }
-
 
 
 /// This is a switch statement using 15 - only one answer per option
@@ -51,12 +45,10 @@ func fizzBuzz2(_ checkNum: Int) -> String {
 }
 
 
-// A simple Swift program has the main run loop as top-level code, no "main"
-var result = "Starting... \n"
+// Simple Swift programs can run top-level code, no "main" needed
 for count in 1...100 {
     print ("\(fizzBuzz1(count))")
 }
-//print("\(result)")
 
 
 // end of file.
