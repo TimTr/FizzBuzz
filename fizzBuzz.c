@@ -1,7 +1,4 @@
 //  fizzBuzz.c
-//
-//  Created by Tim Triemstra on 1/23/16.
-//  Copyright © 2016 Tim Triemstra. All rights reserved.
 
 #include <stdio.h>
 
