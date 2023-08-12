@@ -1,25 +1,25 @@
-/** Simple implementation(s) of FizzBuzz
-
-From your shell / command line, just type: `swift fizzBuzz.swift` to run
+/* Simple implementation(s) of FizzBuzz
 
 This program will loop (1-50 in this case) and then print: 
  - "Fizz" for numbers divisible by 3
  - "Buzz" for numbers divisible by 5
  - "FizzBuzz" for numbers divisible by both 3 and 5
  - Just the iteration number if none of the above applies
-**/
+
+From your shell / command line, just type: `swift fizzBuzz.swift` to run
+*/
 
 // Top-level code to loop through numbers 1 to 50
 for count in 1...50 {
-    print ("\(fizzBuzz1(count))")  // trying implementation #1
+    print ("\(fizzBuzz(count))")
 }
 
 
-/// This is very simple comparison, no special case for 15
+/// Simple comparison, no special case for 15. Color works in Terminal.
 ///
 /// - Parameter number: the specific number to analyze
 /// - Returns: whether the number should be number, fizz, buzz, or both
-func fizzBuzz1(_ number: Int) -> String {
+func fizzBuzz(_ number: Int) -> String {
     var answer = String()
     if (number % 3 == 0) { answer = Color.yellow + "Fizz" }
     if (number % 5 == 0) { answer.append(Color.cyan + "Buzz") }
@@ -32,7 +32,7 @@ func fizzBuzz1(_ number: Int) -> String {
 ///
 /// - Parameter number: the specific number to analyze
 /// - Returns: whether the number should be number, fizz, buzz, or both
-func fizzBuzz2(_ number: Int) -> String {
+func fizzBuzzSwitch(_ number: Int) -> String {
     switch number {
         case _ where number % 15 == 0:
             return "FizzBuzz (\(number.description))"

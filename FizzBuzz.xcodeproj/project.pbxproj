@@ -23,6 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA05B12B2A86920F004662AA /* fizzBuzz.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fizzBuzz.c; sourceTree = "<group>"; };
+		BA05B12C2A869217004662AA /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		BA05B12D2A86921D004662AA /* license.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		BA6BEFFA2A8339DB002CE644 /* TestFizz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestFizz; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6BEFFD2A8339DB002CE644 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,7 +44,10 @@
 		BA6BEFF12A8339DB002CE644 = {
 			isa = PBXGroup;
 			children = (
+				BA05B12C2A869217004662AA /* readme.md */,
 				BA6BEFFD2A8339DB002CE644 /* main.swift */,
+				BA05B12B2A86920F004662AA /* fizzBuzz.c */,
+				BA05B12D2A86921D004662AA /* license.txt */,
 				BA6BEFFB2A8339DB002CE644 /* Products */,
 			);
 			sourceTree = "<group>";
