@@ -1,12 +1,11 @@
-/* Simple implementation(s) of FizzBuzz
-
-This program will loop (1-50 in this case) and then print: 
+/* This program will loop (1-50 in this case) and then print:
+ 
  - "Fizz" for numbers divisible by 3
  - "Buzz" for numbers divisible by 5
  - "FizzBuzz" for numbers divisible by both 3 and 5
- - Just the iteration number if none of the above applies
+ - Just the current iteration number if none of the above applies
 
-From your shell / command line, just type: `swift fizzBuzz.swift` to run
+From the command line, just type: `swift main.swift` to run
 */
 
 // Top-level code to loop through numbers 1 to 50
@@ -15,10 +14,11 @@ for count in 1...50 {
 }
 
 
-/// Simple comparison, no special case for 15. Color works in Terminal.
-///
-/// - Parameter number: the specific number to analyze
-/// - Returns: whether the number should be number, fizz, buzz, or both
+/** Simple comparison, no special case for 15. Color works in Terminal.
+
+- Parameter number: the specific number to analyze
+- Returns: a string to print, e.g. the number itself, fizz, buzz, or fizzbuzz
+*/
 func fizzBuzz(_ number: Int) -> String {
     var answer = String()
     if (number % 3 == 0) { answer = Color.yellow + "Fizz" }
@@ -28,10 +28,11 @@ func fizzBuzz(_ number: Int) -> String {
 }
 
 
-/// This is a switch statement using 15 as a special case
-///
-/// - Parameter number: the specific number to analyze
-/// - Returns: whether the number should be number, fizz, buzz, or both
+/** This is a switch statement using 15 as a special case
+
+- Parameter number: the specific number to analyze
+- Returns: whether the number should be number, fizz, buzz, or both
+*/
 func fizzBuzzSwitch(_ number: Int) -> String {
     switch number {
         case _ where number % 15 == 0:
