@@ -32,16 +32,11 @@ void use_forLoop(int number)
     }
 }
 
-/** Implements the FizzBuzz algorithm in a tiny amount of code
-    Technically this isn't correct since it prints the number every time, whereas
-    the problem statement says to only print the iteration number when
-    both Fizz and Buzz are not true.
+/** Implements FizzBuzz in basically a single line of code. Technically, this isn't correct since it prints the number every time, when instead FizzBuzz is supposed to omit the current number if Fizz or Buzz applies. The implementation is still fun to track, anyway.
     */
 void use_tinyCode(int number)
 {
-   for (int count = 1; count <= 100; count++) {
-      printf("number= %d %s%s\n", count, count%3?"":"Fizz", count%5?"":"Buzz");
-   }
+   for (int count = 1; count <= 100; count++) printf("number= %d %s%s\n", count, count%3?"":"Fizz", count%5?"":"Buzz");
 }
 
 /** Pick from one of the available FizzBuzz algorithms from `main()`*/
