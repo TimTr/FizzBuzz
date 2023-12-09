@@ -1,4 +1,4 @@
-/* This program will loop (1-50 in this case) and then print:
+/* This program will loop through some numbers, and then print:
  
  - "Fizz" for numbers divisible by 3
  - "Buzz" for numbers divisible by 5
@@ -8,18 +8,23 @@
 From the command line, just type: `swift main.swift` to run
 */
 
-// Top-level code to loop through numbers 1 to 50
-for count in 1...50 {
-    print ("\(fizzBuzz(count))")
+// Top-level code to loop through numbers 1 to 100
+print(Color.yellow + "\n\n-- Calling fizzBuzzSimple: \n" + Color.reset)
+for count in 1...100 {
+    print ("\(fizzBuzzSimple(count))")  // Call the "Simple" version
 }
 
+print(Color.yellow + "\n\n-- Calling fizzBuzzSwitch: \n" + Color.reset)
+for count in 1...100 {
+    print ("\(fizzBuzzSwitch(count))")  // Call the "Switch" version
+}
 
-/** Simple comparison, no special case for 15. Color works in Terminal.
+/** fizzBuzzSimple() - No special case for 15. Uses colors.
 
 - Parameter number: the specific number to analyze
 - Returns: a string to print, e.g. the number itself, fizz, buzz, or fizzbuzz
 */
-func fizzBuzz(_ number: Int) -> String {
+func fizzBuzzSimple(_ number: Int) -> String {
     var answer = String()
     if (number % 3 == 0) { answer = Color.yellow + "Fizz" }
     if (number % 5 == 0) { answer.append(Color.cyan + "Buzz") }
@@ -28,7 +33,7 @@ func fizzBuzz(_ number: Int) -> String {
 }
 
 
-/** This is a switch statement using 15 as a special case
+/** fizzBuzzSwitch() - Use a switch statement, with 15 as a special case
 
 - Parameter number: the specific number to analyze
 - Returns: whether the number should be number, fizz, buzz, or both

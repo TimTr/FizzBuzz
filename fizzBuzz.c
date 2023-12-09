@@ -36,7 +36,10 @@ void use_forLoop(int number)
     */
 void use_tinyCode(int number)
 {
-   for (int count = 1; count <= 100; count++) printf("number= %d %s%s\n", count, count%3?"":"Fizz", count%5?"":"Buzz");
+    for (int count = 1; count <= 100; count++)
+    {
+        printf("> %d %s%s\n", count, count%3?"":"Fizz", count%5?"":"Buzz");
+    }
 }
 
 /** Pick from one of the available FizzBuzz algorithms from `main()`*/

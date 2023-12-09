@@ -1,6 +1,6 @@
 # FizzBuzz
 
-Statement of the FizzBuzz problem:
+Statement of the [FizzBuzz](https://imranontech.com/2007/01/24/using-fizzbuzz-to-find-developers-who-grok-coding/) problem:
 
 > Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number, and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 
@@ -16,13 +16,14 @@ Also note that the strict interpretation of the instructions are to print the nu
 **For the Swift version** just type (in Terminal): `swift main.swift` to build and run the program. The Swift version has some color in it as well, so will look kind of ugly if your Terminal or shell app doesn't support colors.
 
 
-**For the C version**  build and then run the output using:
+**For the C version**,  first build, and then run the output using:
 ```
   clang fizzBuzz.c
   ./a.out
 ```
 
-There are sever
+There are several version of the implementation in the code, so just change the `main` function in the C file, or change the top-level code in Swift, to call a different implementaiton function. The function names should be pretty easy to identify.
+
 
 ## Xcode Project
 
